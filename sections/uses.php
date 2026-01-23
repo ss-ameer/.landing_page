@@ -1,14 +1,17 @@
-<section class="py-5">
+<section class="section uses">
     <div class="container">
-        <h2 class="text-center mb-4">Perfect For</h2>
-        <div class="row">
+        <h2 class="text-center mb-5">Best Use For</h2>
+
+        <div class="row gy-4">
             <?php foreach ($data['uses'] as $use): ?>
-                <div class="col-md-4 mb-3">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5><?= htmlspecialchars($use['title']) ?></h5>
-                            <p><?= htmlspecialchars($use['text']) ?></p>
-                        </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-3 text-center">
+                        <h5 class="card-title mb-3">
+                            <?= esc_arr($use, 'title') ?>
+                        </h5>
+                        <p class="card-text">
+                            <?= esc_arr($use, 'text') ?>
+                        </p>
                     </div>
                 </div>
             <?php endforeach; ?>
