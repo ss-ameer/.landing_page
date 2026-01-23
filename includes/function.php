@@ -1,28 +1,23 @@
 <?php
-# Debugging function to dump and die
-function dd($var): void
-{
-    echo '<pre>';
-    var_dump($var);
-    echo '</pre>';
-    exit;
-}
 
-# Escapes a string for HTML output
-function esc(string $string): string
-{
-    return htmlspecialchars($string, ENT_QUOTES);
-}
+# Require local file
+// function require_local($path)
+// {
+//     return require './' . $path;
+// }
 
-# Escapes an array value using dot notation
-function esc_arr(array $data, string $key): string
+# Escape array value by key (dot notation)
+function esc_arr(array $data, $key)
 {
-    foreach (explode('.', $key) as $k) {
-        if (!isset($data[$k])) {
-            return '';
+    $key = explode('.', $key);
+
+    foreach ($key as $k) {
+        if (is_array($data) && isset($data[$k])) {
+            $data = $data[$k];
+        } else {
+            return null;
         }
-        $data = $data[$k];
     }
 
-    return htmlspecialchars((string) $data, ENT_QUOTES);
+    return htmlspecialchars($data, ENT_QUOTES);
 }

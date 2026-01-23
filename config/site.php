@@ -3,13 +3,12 @@
 return [
     'site' => [
         'title' => '3A Gold T-55 Flour',
-        'cta_url' => 'https://bakersmart.ae/product/graph_bag/',
+        'cta_url' => 'https://bakersmart.ae/product/3a-gold-t-55/',
     ],
 
     'hero' => [
-        'kicker' => 'Bake Like a Pro with',
-        'headline' => '3A Gold Flour T-55',
-        'subheadline' => 'Premium french-style flour for artisan baking.',
+        'headline' => '3A Gold T-55 Flour',
+        'subheadline' => 'Premium French-Style Flour for Artisan Baking',
         'tagline' => 'Trusted by professionals for consistent texture, rise, and flavor.',
         'cta_text' => 'Order Now',
     ],
@@ -17,12 +16,13 @@ return [
     'product' => [
         'title' => 'Designed for Precision Baking',
         'description' => '3A Gold T-55 is a finely milled, French-style wheat flour with balanced protein content, ideal for producing dough with excellent elasticity, structure, and a smooth finish.',
-        'image' => '../assets/images/3a_gold.png',
-        'specs' => [
-            ['label' => 'Type', 'value' => 'T-55 French Flour'],
-            // ['label' => 'Protein Content', 'value' => '12%'],
-            ['label' => 'Weight', 'value' => '2kg per bag'],
+        'bullets' => [
+            'Balanced protein for optimal gluten development',
+            'Smooth dough handling and reliable fermentation',
+            'Produces light crumb and golden crust',
+            'Suitable for both professional and home bakers',
         ],
+        'image' => 'assets/images/product.jpg',
     ],
 
     'uses' => [
