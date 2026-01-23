@@ -1,0 +1,22 @@
+@use 'partials/variables' as *;
+@use 'partials/fonts';
+@use 'partials/hero';
+@use 'partials/uses';
+@use 'partials/cta';
+
+// Base
+body {
+    font-family: 'Inter', sans-serif;
+    color: $brand-dark;
+}
+
+// Layout
+.section {
+    padding: 4rem 0;
+}
+
+// Utilities
+/* for debugging outline */
+.outline {
+    outline: 2px solid var(--outline-color);
+}
