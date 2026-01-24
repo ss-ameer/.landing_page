@@ -141,6 +141,14 @@
   transform: translateY(-2px);
 }
 
+.product--name {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.product--description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 .product .thumbnail-img {
   height: 8rem;
   cursor: pointer;
