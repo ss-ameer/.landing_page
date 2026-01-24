@@ -2,17 +2,17 @@
     .thumbnail-img {
         height: 8rem;
         cursor: pointer;
-        border: 2px solid transparent;
         border-radius: 0.5rem;
-        transition: border-color 0.3s ease;
+        transition: all 0.3s ease;
+        filter: grayscale(50%) brightness(0.7);
 
         &.active {
-            border-color: rgb(230, 15, 15);
+            filter: none;
+            transform: scale(1.1);
         }
 
         &:hover {
-            border-color: rgba(230, 15, 15, 0.500);
-
+            filter: grayscale(25%) brightness(0.85);
         }
     }
 

@@ -144,15 +144,16 @@
 .product .thumbnail-img {
   height: 8rem;
   cursor: pointer;
-  border: 2px solid transparent;
   border-radius: 0.5rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
+  filter: grayscale(50%) brightness(0.7);
 }
 .product .thumbnail-img.active {
-  border-color: rgb(230, 15, 15);
+  filter: none;
+  transform: scale(1.1);
 }
 .product .thumbnail-img:hover {
-  border-color: rgba(230, 15, 15, 0.5);
+  filter: grayscale(25%) brightness(0.85);
 }
 .product .carousel-control-prev,
 .product .carousel-control-next {
