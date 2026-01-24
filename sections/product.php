@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="col-12">
-                        <div id="productThumbnails" class="product-thumbnails">
+                        <div id="productThumbnails" class="product-thumbnails d-flex justify-content-center gap-3 p-3">
                             <?php foreach ($products_carousel_items as $index => $item): ?>
                                 <img
                                     src="<?= esc($item['image']) ?>"
