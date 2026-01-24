@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="col-12 bg-danger">
-                        <!-- EDIT: change to display thumbnails -->
+                        <!-- TODO: Change thumbnail carousel to display actual small thumbnail -->
                         <div id="carouselProductThumb" class="carousel slide">
                             <div class="carousel-inner">
                                 <?php foreach ($products_carousel_items as $index => $item): ?>
@@ -60,7 +60,7 @@
                                 <?php endforeach; ?>
                             </div>
                         </div>
-                        <!-- END: change to display thumbnails -->
+                        <!-- END TODO -->
 
                     </div>
                 </div>
