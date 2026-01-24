@@ -35,19 +35,21 @@
                     </button>
                 </div>
             </div>
-
+            <!-- product details column -->
             <div class="col-lg-6 align-content-center bg-danger p-5 text-white rounded-5">
-                <div class=" row outline m-3">
-                    <div class="col">
-                        <h2 class="mb-3">
-                            <?= esc_arr($data, 'product.product-flour-gold.name') ?>
+                <div class="row outline h-50" style="--outline-color: white;">
+                    <div class="col p-3">
+                        <h2 id="productName" class="mb-3">
+                            <?= esc_arr($data, 'product.flour-gold.name') ?>
                         </h2>
 
-                        <p class="mb-3">
-                            <?= esc_arr($data, 'product.product-flour-gold.description') ?>
+                        <p id="productDesc" class="mb-3">
+                            <?= esc_arr($data, 'product.flour-gold.description') ?>
                         </p>
                     </div>
+                </div>
 
+                <div class="row">
                     <div class="col-12">
                         <div id="productThumbnails" class="product-thumbnails d-flex justify-content-center gap-3 p-3">
                             <?php foreach ($products_carousel_items as $index => $item): ?>
@@ -68,6 +70,23 @@
 </section>
 
 <script>
+    const productData = <?= json_encode([
+                            'gold' => [
+                                'name' => $data['product']['flour-gold']['name'],
+                                'description' => $data['product']['flour-gold']['description']
+                            ],
+                            'red' => [
+                                'name' => $data['product']['flour-red']['name'],
+                                'description' => $data['product']['flour-red']['description']
+                            ],
+                            'green' => [
+                                'name' => $data['product']['flour-green']['name'],
+                                'description' => $data['product']['flour-green']['description']
+                            ]
+                        ]) ?>;
+</script>
+
+<script>
     document.addEventListener('DOMContentLoaded', () => {
         const main = document.getElementById('carouselProductMain');
         const thumbnails = document.getElementById('productThumbnails');
@@ -76,6 +95,11 @@
 
         main.addEventListener('slid.bs.carousel', (e) => {
             const index = e.to;
+            // Update product details
+            const keys = ['gold', 'red', 'green'];
+            const key = keys[index];
+            document.getElementById('productName').textContent = productData[key].name;
+            document.getElementById('productDesc').textContent = productData[key].description;
             // Remove active from all thumbnails
             thumbnails.querySelectorAll('.thumbnail-img').forEach(img => img.classList.remove('active'));
             // Add active to current
