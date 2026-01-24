@@ -14,9 +14,9 @@
         ],
     ]; ?>
     <div class="container">
-        <div class="row outline" style="--outline-color: red;">
+        <div class="row">
 
-            <div class="col-lg-6 text-center bg-primary">
+            <div class="col-lg-6 text-center">
                 <div id="carouselProductMain" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <?php foreach ($products_carousel_items as $index => $item): ?>
@@ -36,32 +36,28 @@
                 </div>
             </div>
 
-            <!-- this -->
-            <div class="col-lg-6 bg-secondary align-content-center outline" style="--outline-color: black;">
-                <div class="row outline">
-                    <div class="col bg-primary align-content-center">
+            <div class="col-lg-6 align-content-center bg-danger p-5 text-white rounded-5">
+                <div class=" row outline m-3">
+                    <div class="col">
                         <h2 class="mb-3">
-                            <?= esc_arr($data, 'product.title') ?>
+                            <?= esc_arr($data, 'product.product-flour-gold.name') ?>
                         </h2>
 
                         <p class="mb-3">
-                            <?= esc_arr($data, 'product.description') ?>
+                            <?= esc_arr($data, 'product.product-flour-gold.description') ?>
                         </p>
                     </div>
 
-                    <div class="col-12 bg-danger">
-                        <!-- TODO: Change thumbnail carousel to display actual small thumbnail -->
-                        <div id="carouselProductThumb" class="carousel slide">
-                            <div class="carousel-inner">
-                                <?php foreach ($products_carousel_items as $index => $item): ?>
-                                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                                        <img src="<?= esc($item['image']) ?>" alt="<?= esc($item['alt']) ?>" class="d-block w-100">
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
+                    <div class="col-12">
+                        <div id="productThumbnails" class="product-thumbnails">
+                            <?php foreach ($products_carousel_items as $index => $item): ?>
+                                <img
+                                    src="<?= esc($item['image']) ?>"
+                                    alt="<?= esc($item['alt']) ?>"
+                                    class="thumbnail-img <?= $index === 0 ? 'active' : '' ?>"
+                                    data-index="<?= $index ?>">
+                            <?php endforeach; ?>
                         </div>
-                        <!-- END TODO -->
-
                     </div>
                 </div>
 
@@ -74,19 +70,22 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const main = document.getElementById('carouselProductMain');
-        const thumb = document.getElementById('carouselProductThumb');
+        const thumbnails = document.getElementById('productThumbnails');
 
         const mainCarousel = bootstrap.Carousel.getOrCreateInstance(main);
-        const thumbCarousel = bootstrap.Carousel.getOrCreateInstance(thumb);
 
         main.addEventListener('slid.bs.carousel', (e) => {
-            const index = e.to; // current active index
-            thumbCarousel.to(index);
+            const index = e.to;
+            // Remove active from all thumbnails
+            thumbnails.querySelectorAll('.thumbnail-img').forEach(img => img.classList.remove('active'));
+            // Add active to current
+            thumbnails.querySelector(`.thumbnail-img[data-index="${index}"]`).classList.add('active');
         });
 
-        thumb.querySelectorAll('.carousel-item img').forEach((img, idx) => {
+        thumbnails.querySelectorAll('.thumbnail-img').forEach((img) => {
             img.addEventListener('click', () => {
-                mainCarousel.to(idx);
+                const index = parseInt(img.dataset.index);
+                mainCarousel.to(index);
             });
         });
     });

@@ -1,5 +1,4 @@
 <?php
-
 return [
     'site' => [
         'title' => '3A Gold T-55 Flour',
@@ -15,13 +14,13 @@ return [
     ],
 
     'product' => [
-        'title' => 'Designed for Precision Baking',
-        'description' => '3A Gold T-55 is a finely milled, French-style wheat flour with balanced protein content, ideal for producing dough with excellent elasticity, structure, and a smooth finish.',
-        'image' => '../assets/images/3a_gold.png',
-        'specs' => [
-            ['label' => 'Type', 'value' => 'T-55 French Flour'],
-            // ['label' => 'Protein Content', 'value' => '12%'],
-            ['label' => 'Weight', 'value' => '2kg per bag'],
+        'product-flour-gold' => [
+            'name' => '3A Gold T-55',
+            'description' => '3A Gold T-55 Flour is a fine, French-style wheat flour with moderate protein content, ideal for baguettes, pastries, and light, airy breads. It provides smooth dough handling and consistently excellent baking results.',
+            'type' => 'T-55 French Flour',
+            'weight' => '2kg per bag',
+            'price' => "15.00",
+            'image' => $path['images']['flour_gold'],
         ],
     ],
 

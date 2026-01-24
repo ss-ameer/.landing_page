@@ -2,4 +2,4 @@
 
 - [ ] Replace online dependencies with local installations (Bootstrap, Bootstrap Icons, jQuery, etc)
 - [ ] Update HTML/PHP files to reference local files
-- [ ] Modify product carousel thumbnails to display actual small thumbnail
+- [x] Modify product carousel thumbnails to display actual small thumbnail

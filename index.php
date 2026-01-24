@@ -1,8 +1,9 @@
 <?php
 require './includes/function.php';
+require './config/variables.php';
 
-$data = require './config/site.php';
 $path = require './config/paths.php';
+$data = require './config/site.php';
 ?>
 
 <?php include $path['includes']['head'] ?>
