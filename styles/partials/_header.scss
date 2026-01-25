@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+header {
+    background: $brand-secondary;
+    font-size: 0.85em;
+
+    div {
+        padding: 0.25rem;
+    }
+
+    .top-bar {
+        &--right {
+            .div {}
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .top-bar {
+        background-color: $brand-primary;
+    }
+}

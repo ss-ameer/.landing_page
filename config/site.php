@@ -5,6 +5,36 @@ return [
         'cta_url' => 'https://bakersmart.ae/product/graph_bag/',
     ],
 
+    'socials' => [
+        'facebook' => [
+            'link' => '',
+            'icon' => 'bi bi-facebook',
+        ],
+        'x' => [
+            'link' => '',
+            'icon' => 'bi bi-twitter-x',
+        ],
+        'instagram' => [
+            'link' => '',
+            'icon' => 'bi bi-instagram',
+        ],
+        'youtube' => [
+            'link' => '',
+            'icon' => 'bi bi-youtube',
+        ],
+        'pinterest' => [
+            'link' => '',
+            'icon' => 'bi bi-pinterest',
+        ],
+    ],
+
+    'header' => [],
+
+    'topbar' => [
+        'message' => 'Clearance Sale is live now. Up to 45% off',
+        'mobile' => '+971 54 211 8789'
+    ],
+
     'hero' => [
         'kicker' => 'Bake Like a Pro with',
         'headline' => '3A Gold Flour T-55',
