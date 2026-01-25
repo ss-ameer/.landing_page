@@ -2,7 +2,7 @@
 
 // Hero
 .hero {
-    // overflow: hidden;
+    overflow: hidden;
     background-color: $brand-primary;
 
     &__text--kicker {
@@ -74,6 +74,7 @@
 
     &__container--graph:hover .hero__image--light {
         opacity: 1;
+        filter: drop-shadow(3px 3px $gradient-light) sepia(100%) drop-shadow(-3px -3px $gradient-gold);
     }
 
     &__container--graph:hover .hero__image--middle {
