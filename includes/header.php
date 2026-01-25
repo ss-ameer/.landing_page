@@ -6,21 +6,21 @@
         <div class="d-flex gap-3 align-content-center top-bar--right">
             <div class="socials">
                 <?php foreach ($data['socials'] as $details): ?>
-                    <a href="<?= $details['link'] ?>" class="px-1">
+                    <a href="<?= $details['link'] ?>" class="px-1 social-icon">
                         <i class="<?= $details['icon'] ?>"></i>
                     </a>
                 <?php endforeach; ?>
             </div>
             <div>
-                <a href="#">
+                <a href="#" class="location">
                     <i class="<?= esc_arr($data, 'topbar.location.icon') ?>"></i>
-                    <span class=""><?= esc_arr($data, 'topbar.location.value') ?></span>
+                    <span class="location--value"><?= esc_arr($data, 'topbar.location.value') ?></span>
                 </a>
             </div>
             <div class="">
-                <a href="#">
-                    <i class="<?= esc_arr($data, 'topbar.mobile.icon') ?>"></i>
-                    <span><?= esc_arr($data, 'topbar.mobile.value') ?></span>
+                <a href="#" class="mobile--contact">
+                    <i class="mobile--icon <?= esc_arr($data, 'topbar.mobile.icon') ?>"></i>
+                    <span class="mobile--value"><?= esc_arr($data, 'topbar.mobile.value') ?></span>
                 </a>
             </div>
         </div>

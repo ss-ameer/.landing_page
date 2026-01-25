@@ -3,9 +3,14 @@
 header {
     background: $brand-secondary;
 
-    div {}
-
     .top-bar {
+        @mixin hover-underline {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        background-color: $brand-primary;
 
         div {
             padding: 0.30rem 0.50rem;
@@ -21,6 +26,24 @@ header {
 
             .socials {
                 font-size: 0.95rem;
+
+                .social-icon {
+                    &:hover {
+                        transform: scale(2);
+                        filter: grayscale(75%) brightness(0.50);
+                        transition: all 0.5s ease;
+                    }
+                }
+
+            }
+
+
+            .mobile--contact {
+                @include hover-underline;
+            }
+
+            .location {
+                @include hover-underline;
             }
         }
     }
@@ -30,7 +53,4 @@ header {
         color: white;
     }
 
-    .top-bar {
-        background-color: $brand-primary;
-    }
 }

@@ -175,6 +175,9 @@
 header {
   background: #FFF9F9;
 }
+header .top-bar {
+  background-color: #7B0102;
+}
 header .top-bar div {
   padding: 0.3rem 0.5rem;
   align-content: center;
@@ -188,12 +191,20 @@ header .top-bar--right {
 header .top-bar--right .socials {
   font-size: 0.95rem;
 }
+header .top-bar--right .socials .social-icon:hover {
+  transform: scale(2);
+  filter: grayscale(75%) brightness(0.5);
+  transition: all 0.5s ease;
+}
+header .top-bar--right .mobile--contact:hover {
+  text-decoration: underline;
+}
+header .top-bar--right .location:hover {
+  text-decoration: underline;
+}
 header a {
   text-decoration: none;
   color: white;
-}
-header .top-bar {
-  background-color: #7B0102;
 }
 
 body {
