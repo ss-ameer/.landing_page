@@ -1,6 +1,6 @@
-<section class="section hero bg-danger">
+<section class="section hero">
     <div class="container">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center text-white">
             <div class="col-lg-6">
 
                 <span class="fw-bold hero__text--kicker">
@@ -14,10 +14,6 @@
                 <p class="mt-3 lead">
                     <?= esc_arr($data, 'hero.subheadline') ?> <br>
                     <?= esc_arr($data, 'hero.tagline') ?>
-                </p>
-
-                <p class="lead">
-
                 </p>
 
                 <a href="<?= esc_arr($data, 'site.cta_url') ?>" class="btn btn-lg mt-3 btn-standard">

@@ -2,7 +2,8 @@
 
 // Hero
 .hero {
-    overflow: hidden;
+    // overflow: hidden;
+    background-color: $brand-primary;
 
     &__text--kicker {
         font-family: 'Breathing';
