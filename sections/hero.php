@@ -28,17 +28,17 @@
             <div class="col-lg-6 mx-auto hero__container--graph">
 
                 <img
-                    src="../assets/images/graph/graph_back.png"
+                    src="<?= esc_arr($path, 'images.hero_back') ?>"
                     class="hero__image hero__image--back"
                     alt="">
 
                 <img
-                    src="../assets/images/graph/graph_middle.png"
+                    src="<?= esc_arr($path, 'images.hero_middle') ?>"
                     class="hero__image hero__image--middle"
                     alt="">
 
                 <img
-                    src="../assets/images/graph/graph_front.png"
+                    src="<?= esc_arr($path, 'images.hero_front') ?>"
                     class="hero__image hero__image--front"
                     alt="">
 

@@ -19,9 +19,15 @@ return [
     ],
 
     'images' => [
+        // products
         'flour_gold' => $default['images'] . '/products/flour_gold.png',
         'flour_red'  => $default['images'] . '/products/flour_red.png',
         'flour_green' => $default['images'] . '/products/flour_green.png',
+
+        // hero graphics
+        'hero_back' => $default['images'] . '/graph/graph_back.png',
+        'hero_middle' => $default['images'] . '/graph/graph_middle.png',
+        'hero_front' => $default['images'] . '/graph/graph_front.png',
     ],
 
 ];
