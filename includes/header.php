@@ -1,10 +1,10 @@
 <header class="">
     <div class="top-bar d-flex justify-content-between text-white">
         <div class="top-bar--left align-content-center">
-            <span><?= esc_arr($data, 'topbar.message') ?></span>
+            <span><?= esc_arr($data, 'topbar.message.value') ?></span>
         </div>
-        <div class="d-flex gap-3 top-bar--right">
-            <div>
+        <div class="d-flex gap-3 align-content-center top-bar--right">
+            <div class="socials">
                 <?php foreach ($data['socials'] as $details): ?>
                     <a href="<?= $details['link'] ?>" class="px-1">
                         <i class="<?= $details['icon'] ?>"></i>
@@ -13,14 +13,14 @@
             </div>
             <div>
                 <a href="#">
-                    <i class="bi bi-geo-alt"></i>
-                    <span class="">STORE LOCATIONS</span>
+                    <i class="<?= esc_arr($data, 'topbar.location.icon') ?>"></i>
+                    <span class=""><?= esc_arr($data, 'topbar.location.value') ?></span>
                 </a>
             </div>
-            <div>
+            <div class="">
                 <a href="#">
-                    <i class="bi bi-telephone"></i>
-                    <span><?= esc_arr($data, 'topbar.mobile') ?></span>
+                    <i class="<?= esc_arr($data, 'topbar.mobile.icon') ?>"></i>
+                    <span><?= esc_arr($data, 'topbar.mobile.value') ?></span>
                 </a>
             </div>
         </div>

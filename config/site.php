@@ -31,8 +31,18 @@ return [
     'header' => [],
 
     'topbar' => [
-        'message' => 'Clearance Sale is live now. Up to 45% off',
-        'mobile' => '+971 54 211 8789'
+        'message' => [
+            'value' => 'Clearance Sale is live now. Up to 45% off',
+        ],
+        'location' => [
+            'value' => 'Store Locations',
+            'icon' => 'bi bi-geo-alt',
+            'link' => 'https://bakersmart.ae/our-store/'
+        ],
+        'mobile' => [
+            'value' => '+971 54 211 8789',
+            'icon' => 'bi bi-telephone'
+        ]
     ],
 
     'hero' => [

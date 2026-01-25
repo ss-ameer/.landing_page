@@ -2,15 +2,26 @@
 
 header {
     background: $brand-secondary;
-    font-size: 0.85em;
 
-    div {
-        padding: 0.25rem;
-    }
+    div {}
 
     .top-bar {
+
+        div {
+            padding: 0.30rem 0.50rem;
+            align-content: center;
+        }
+
+        &--left {
+            font-size: 0.70rem;
+        }
+
         &--right {
-            .div {}
+            font-size: 0.75rem;
+
+            .socials {
+                font-size: 0.95rem;
+            }
         }
     }
 

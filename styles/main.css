@@ -37,7 +37,7 @@
 }
 .hero {
   overflow: hidden;
-  background-color: #660000;
+  background-color: #7B0102;
 }
 .hero__text--kicker {
   font-family: "Breathing";
@@ -48,7 +48,7 @@
   font-size: 5rem;
 }
 .hero__btn--order {
-  background-color: #660000;
+  background-color: #7B0102;
   color: #fff;
   border: none;
   padding: 0.75rem 2rem;
@@ -57,8 +57,8 @@
 }
 .hero__btn--order:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #660000;
-  outline: 1px solid #660000;
+  color: #7B0102;
+  outline: 1px solid #7B0102;
   transform: translateY(-2px);
 }
 .hero__container--graph {
@@ -118,7 +118,7 @@
 }
 
 .cta {
-  background-color: #660000;
+  background-color: #7B0102;
   color: #fff;
   padding: 4rem 0;
 }
@@ -142,7 +142,7 @@
   line-height: 1.6;
 }
 .product .container {
-  background-color: #660000;
+  background-color: #7B0102;
 }
 .product .thumbnail-img {
   height: 8rem;
@@ -174,17 +174,26 @@
 
 header {
   background: #FFF9F9;
-  font-size: 0.85em;
 }
-header div {
-  padding: 0.25rem;
+header .top-bar div {
+  padding: 0.3rem 0.5rem;
+  align-content: center;
+}
+header .top-bar--left {
+  font-size: 0.7rem;
+}
+header .top-bar--right {
+  font-size: 0.75rem;
+}
+header .top-bar--right .socials {
+  font-size: 0.95rem;
 }
 header a {
   text-decoration: none;
   color: white;
 }
 header .top-bar {
-  background-color: #660000;
+  background-color: #7B0102;
 }
 
 body {
@@ -198,7 +207,7 @@ body {
 
 .btn-standard {
   background-color: #fff;
-  color: #660000;
+  color: #7B0102;
   padding: 0.75rem 2rem;
   font-size: 1rem;
   font-weight: 600;
