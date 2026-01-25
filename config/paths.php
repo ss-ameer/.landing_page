@@ -28,6 +28,10 @@ return [
         'hero_back' => $default['images'] . '/graph/graph_back.png',
         'hero_middle' => $default['images'] . '/graph/graph_middle.png',
         'hero_front' => $default['images'] . '/graph/graph_front.png',
+
+        //brand
+        'brand_icon' => $default['images'] . '/brand/brand_icon.png',
+        'brand_logo' => $default['images'] . '/brand/brand_logo.jpeg',
     ],
 
 ];
