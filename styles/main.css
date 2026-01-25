@@ -36,7 +36,7 @@
   font-style: normal;
 }
 .hero {
-  overflow: hidden;
+  background-color: #660000;
 }
 .hero__text--kicker {
   font-family: "Breathing";
@@ -128,8 +128,7 @@
   margin-bottom: 2rem;
 }
 .cta .btn-standard:hover {
-  background-color: #660000;
-  outline: auto;
+  background-color: transparent;
 }
 
 .product--name {
