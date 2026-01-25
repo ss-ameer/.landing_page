@@ -1,5 +1,5 @@
 .color__gold--gradient, .hero__text--headline {
-  background: linear-gradient(160deg, #c9a34d, #ecd550, #ecd550, #f4db4e, #fcd670, #f5d770, #fcd670, #fcd670, #f4db4e, #c9a34d, #b69341, #b69341);
+  background: linear-gradient(190deg, #c9a34d, #ecd550, #ecd550, #f4db4e, #fcd670, #f5d770, #fcd670, #fcd670, #f4db4e, #c9a34d, #c7a045);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -47,20 +47,6 @@
   font-family: "Bebas Neue", sans-serif;
   font-size: 5rem;
 }
-.hero__btn--order {
-  background-color: #7B0102;
-  color: #fff;
-  border: none;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  transition: background-color 0.25s ease, transform 0.25s ease;
-}
-.hero__btn--order:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #7B0102;
-  outline: 1px solid #7B0102;
-  transform: translateY(-2px);
-}
 .hero__container--graph {
   position: relative;
   max-width: 420px;
@@ -95,10 +81,19 @@
 }
 .hero__container--graph:hover .hero__image--light {
   opacity: 1;
-  filter: drop-shadow(3px 3px linear-gradient(135deg, #FFF9F9 0%, #FFE3E3 100%)) sepia(100%) drop-shadow(-3px -3px linear-gradient(160deg, #c9a34d, #ecd550, #ecd550, #f4db4e, #fcd670, #f5d770, #fcd670, #fcd670, #f4db4e, #c9a34d, #b69341, #b69341));
+  filter: drop-shadow(3px 3px linear-gradient(135deg, #FFF9F9 0%, #FFE3E3 100%)) sepia(100%) drop-shadow(-3px -3px linear-gradient(190deg, #c9a34d, #ecd550, #ecd550, #f4db4e, #fcd670, #f5d770, #fcd670, #fcd670, #f4db4e, #c9a34d, #c7a045));
 }
 .hero__container--graph:hover .hero__image--middle {
   transform: translateY(-30px);
+}
+.hero .btn {
+  background: linear-gradient(190deg, #c9a34d, #ecd550, #ecd550, #f4db4e, #fcd670, #f5d770, #fcd670, #fcd670, #f4db4e, #c9a34d, #c7a045);
+  transition: all 0.45s cubic-bezier(0.4, 0.3, 0.2, 1);
+}
+.hero .btn:hover {
+  color: #7B0102;
+  outline: none;
+  box-shadow: 0 0 8px 2px rgba(201, 163, 77, 0.35), 0 0 16px 4px rgba(255, 249, 249, 0.18);
 }
 
 .uses {
