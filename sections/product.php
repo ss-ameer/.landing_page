@@ -1,3 +1,7 @@
+<?php
+$show_outline = true; // Set to false to hide all outlines
+?>
+
 <section class="section product">
     <?php $products_carousel_items = [
         [
@@ -15,7 +19,6 @@
     ]; ?>
     <div class="container">
         <div class="row">
-
             <div class="col-lg-6 text-center">
                 <div id="carouselProductMain" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
@@ -36,30 +39,23 @@
                 </div>
             </div>
             <!-- product details column -->
-            <div class="col-lg-6 bg-danger rounded-5 p-5 text-white">
-                <div class="row h-50 align-content-center" style="--outline-color: white;">
-                    <div class="col p-5">
-                        <h2 id="productName" class="product--name mb-3">
+            <div class="col-lg-6 bg-danger rounded-5 text-white <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: yellow;">
+                <div class="row h-100 <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: blue; min-height: 400px; padding: 20px;">
+                    <div class="col-12 <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: green;">
+                        <h2 id="productName" class="product--name">
                             <?= esc_arr($data, 'product.flour-gold.name') ?>
                         </h2>
-
 
                         <p id="productDesc" class="lead product--description">
                             <?= esc_arr($data, 'product.flour-gold.description') ?>
                         </p>
-
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col px-5 ">
-                        <a href="<?= esc($data['site']['cta_url']) ?>" class="btn btn-light btn-lg mb-3">More Info</a>
+                    <div class="col-12 align-self-end <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: black;">
+                        <a href="<?= esc($data['site']['cta_url']) ?>" class="btn btn-light btn-lg">More Info</a>
                     </div>
-                </div>
 
-                <div class="row h-25 my-auto">
-                    <div class="col">
-                        <div id="productThumbnails" class="product-thumbnails d-flex justify-content-center gap-3 p-3">
+                    <div class="col align-self-end <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: white;">
+                        <div id="productThumbnails" class="product-thumbnails d-flex justify-content-center gap-3">
                             <?php foreach ($products_carousel_items as $index => $item): ?>
                                 <img
                                     src="<?= esc($item['image']) ?>"
@@ -70,9 +66,7 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </section>
