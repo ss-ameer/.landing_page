@@ -7,23 +7,23 @@ return [
 
     'socials' => [
         'facebook' => [
-            'link' => '',
+            'link' => 'https://www.facebook.com/bakersmartme/',
             'icon' => 'bi bi-facebook',
         ],
         'x' => [
-            'link' => '',
+            'link' => 'https://bakersmart.ae/#',
             'icon' => 'bi bi-twitter-x',
         ],
         'instagram' => [
-            'link' => '',
+            'link' => 'https://www.instagram.com/bakersmartme/?hl=en',
             'icon' => 'bi bi-instagram',
         ],
         'youtube' => [
-            'link' => '',
+            'link' => 'https://www.youtube.com/@BakersMartuae',
             'icon' => 'bi bi-youtube',
         ],
         'pinterest' => [
-            'link' => '',
+            'link' => 'https://bakersmart.ae/#',
             'icon' => 'bi bi-pinterest',
         ],
     ],
