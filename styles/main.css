@@ -196,10 +196,10 @@ header .top-bar--right .socials .social-icon:hover {
   filter: grayscale(75%) brightness(0.5);
   transition: all 0.5s ease;
 }
-header .top-bar--right .mobile--contact:hover {
+header .top-bar--right .mobile--value:hover {
   text-decoration: underline;
 }
-header .top-bar--right .location:hover {
+header .top-bar--right .location--value:hover {
   text-decoration: underline;
 }
 header a {

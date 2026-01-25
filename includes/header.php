@@ -11,15 +11,15 @@
                     </a>
                 <?php endforeach; ?>
             </div>
-            <div>
+            <div class="">
                 <a href="#" class="location">
-                    <i class="<?= esc_arr($data, 'topbar.location.icon') ?>"></i>
+                    <i class="pe-1 <?= esc_arr($data, 'topbar.location.icon') ?>"></i>
                     <span class="location--value"><?= esc_arr($data, 'topbar.location.value') ?></span>
                 </a>
             </div>
             <div class="">
-                <a href="#" class="mobile--contact">
-                    <i class="mobile--icon <?= esc_arr($data, 'topbar.mobile.icon') ?>"></i>
+                <a href="#" class="mobile">
+                    <i class="pe-1 mobile--icon <?= esc_arr($data, 'topbar.mobile.icon') ?>"></i>
                     <span class="mobile--value"><?= esc_arr($data, 'topbar.mobile.value') ?></span>
                 </a>
             </div>

@@ -38,12 +38,16 @@ header {
             }
 
 
-            .mobile--contact {
-                @include hover-underline;
+            .mobile {
+                &--value {
+                    @include hover-underline;
+                }
             }
 
             .location {
-                @include hover-underline;
+                &--value {
+                    @include hover-underline;
+                }
             }
         }
     }
