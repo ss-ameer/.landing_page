@@ -47,7 +47,7 @@
   font-size: 5rem;
 }
 .hero__btn--order {
-  background-color: #c9a34d;
+  background-color: #660000;
   color: #fff;
   border: none;
   padding: 0.75rem 2rem;
@@ -56,8 +56,8 @@
 }
 .hero__btn--order:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  color: #c9a34d;
-  outline: 1px solid #c9a34d;
+  color: #660000;
+  outline: 1px solid #660000;
   transform: translateY(-2px);
 }
 .hero__container--graph {
@@ -116,7 +116,7 @@
 }
 
 .cta {
-  background-color: #c9a34d;
+  background-color: #660000;
   color: #fff;
   padding: 4rem 0;
 }
@@ -127,18 +127,9 @@
   font-size: 1.1rem;
   margin-bottom: 2rem;
 }
-.cta .btn-cta {
-  background-color: #fff;
-  color: #c9a34d;
-  border: none;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  transition: background-color 0.25s ease, transform 0.25s ease;
-}
-.cta .btn-cta:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  transform: translateY(-2px);
+.cta .btn-standard:hover {
+  background-color: #660000;
+  outline: auto;
 }
 
 .product--name {
@@ -148,6 +139,9 @@
 .product--description {
   font-size: 1.1rem;
   line-height: 1.6;
+}
+.product .container {
+  background-color: #660000;
 }
 .product .thumbnail-img {
   height: 8rem;
@@ -173,14 +167,30 @@
 .product .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23e60f0f' viewBox='0 0 16 16'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+.product .btn-standard:hover {
+  background-color: transparent;
+}
 
 body {
   font-family: "Inter", sans-serif;
-  color: #2a2a2a;
+  color: #060000;
 }
 
 .section {
   padding: 4rem 0;
+}
+
+.btn-standard {
+  background-color: #fff;
+  color: #660000;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.btn-standard:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: auto;
 }
 
 /* for debugging outline */

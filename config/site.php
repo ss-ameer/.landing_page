@@ -15,25 +15,25 @@ return [
 
     'product' => [
         'flour-gold' => [
-            'name' => '3A Gold T-55 (All Purpose Flour)',
+            'name' => '3A Gold T-55',
             'description' => '3A Gold T-55 Flour is a fine, French-style wheat flour with moderate protein content, ideal for baguettes, pastries, and light, airy breads. It provides smooth dough handling and consistently excellent baking results.',
-            'type' => 'T-55 French Flour',
+            'type' => 'All Purpose Flour',
             'weight' => '2kg per bag',
             'price' => "15.00",
             'image' => $path['images']['flour_gold'],
         ],
         'flour-red' => [
-            'name' => 'Pen Red Flour T-45 (Soft Flour)',
+            'name' => 'Pen Red Flour T-45 ',
             'description' => 'Pen Red T-45 Flour is an ultra-fine, low-protein flour ideal for delicate pastries, cakes, and premium patisserie, delivering light and tender results.',
-            'type' => 'T-55 French Flour',
+            'type' => 'Soft Flour',
             'weight' => '2kg per bag',
             'price' => "15.00",
             'image' => $path['images']['flour_red'],
         ],
         'flour-green' => [
-            'name' => 'Stork ‘S’ Flour T-65 (Hard Flour)',
+            'name' => 'Stork ‘S’ Flour T-65',
             'description' => 'Stork ‘S’ T-65 Flour is a versatile French-style flour ideal for rustic breads, offering great structure, flavor, and a well-developed crust.',
-            'type' => 'T-55 French Flour',
+            'type' => 'Hard Flour',
             'weight' => '2kg per bag',
             'price' => "15.00",
             'image' => $path['images']['flour_green'],

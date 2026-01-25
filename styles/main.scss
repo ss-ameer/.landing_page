@@ -16,6 +16,21 @@ body {
     padding: 4rem 0;
 }
 
+.btn-standard {
+    background-color: #fff;
+    color: $brand-primary;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        // transform: translateY(-6px);
+        outline: auto;
+    }
+}
+
 // Utilities
 /* for debugging outline */
 .outline {
