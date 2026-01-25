@@ -15,18 +15,10 @@
         margin-bottom: 2rem;
     }
 
-    .btn-cta {
-        background-color: #fff;
-        color: $brand-primary;
-        border: none;
-        padding: 0.75rem 2rem;
-        font-size: 1rem;
-        font-weight: 600;
-        transition: background-color 0.25s ease, transform 0.25s ease;
-
+    .btn-standard {
         &:hover {
-            background-color: rgba(255, 255, 255, 0.9);
-            transform: translateY(-2px);
+            background-color: $transparent;
         }
     }
+
 }

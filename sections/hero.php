@@ -20,7 +20,7 @@
 
                 </p>
 
-                <a href="<?= esc_arr($data, 'site.cta_url') ?>" class="btn btn-lg mt-3 hero__btn--order">
+                <a href="<?= esc_arr($data, 'site.cta_url') ?>" class="btn btn-lg mt-3 btn-standard">
                     <?= esc_arr($data, 'hero.cta_text') ?>
                 </a>
             </div>
