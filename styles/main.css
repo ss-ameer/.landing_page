@@ -41,6 +41,7 @@
 }
 .hero__text--kicker {
   font-family: "Breathing";
+  font-size: 1.6rem;
 }
 .hero__text--headline {
   font-weight: 900;
@@ -203,6 +204,7 @@ header a {
 }
 
 body {
+  background: #FFF9F9;
   font-family: "Inter", sans-serif;
   color: #060000;
 }
