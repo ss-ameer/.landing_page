@@ -1,6 +1,6 @@
 <section class="section uses">
     <div class="container">
-        <h2 class="text-center mb-5">Best Use For</h2>
+        <h2 class="text-center">The Best Choice for:</h2>
 
         <div class="row gy-4">
             <?php foreach ($data['uses'] as $use): ?>

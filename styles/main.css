@@ -206,7 +206,7 @@ header a {
 body {
   background: #FFF9F9;
   font-family: "Inter", sans-serif;
-  color: #060000;
+  color: #242424;
 }
 
 .section {
@@ -224,6 +224,19 @@ body {
 .btn-standard:hover {
   background-color: rgba(255, 255, 255, 0.9);
   outline: auto;
+}
+
+.section--headline .headline--sub {
+  font-family: "Breathing";
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #7B0102;
+}
+.section--headline .headline--main {
+  font-family: "Poppins" sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  color: #242424;
 }
 
 /* for debugging outline */

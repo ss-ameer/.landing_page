@@ -1,7 +1,7 @@
 <?php
 $section_data = [
     'headline_sub' => 'Trusted by Our Partners',
-    'headline_main' => 'Chosen by businesses that value quality',
+    'headline_main' => 'Chosen by Businesses that Value Quality',
 ]
 ?>
 
