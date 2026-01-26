@@ -11,6 +11,10 @@ return [
         'footer'   => __DIR__ . '/../includes/footer.php',
     ],
 
+    'partials' => [
+        'section_headline' => __DIR__ . '/../includes/partials/section-headline.php',
+    ],
+
     'sections' => [
         'hero'    => __DIR__ . '/../sections/hero.php',
         'product' => __DIR__ . '/../sections/product.php',

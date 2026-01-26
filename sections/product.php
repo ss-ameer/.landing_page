@@ -1,25 +1,31 @@
 <?php
-
-use function PHPSTORM_META\type;
-
 $show_outline = false; // Set to false to hide all outlines
 ?>
 
+<?php
+$products_carousel_items = [
+    [
+        'image' => $path['images']['flour_gold'],
+        'alt'   => 'Gold Flour'
+    ],
+    [
+        'image' => $path['images']['flour_red'],
+        'alt'   => 'Red Flour'
+    ],
+    [
+        'image' => $path['images']['flour_green'],
+        'alt'   => 'Green Flour'
+    ],
+];
+
+$section_data = [
+    'headline_sub' => 'Extended Product Range',
+    'headline_main' => 'Additional flour types available upon requirement',
+];
+?>
+
+<?php include $path['partials']['section_headline']; ?>
 <section class="section product">
-    <?php $products_carousel_items = [
-        [
-            'image' => $path['images']['flour_gold'],
-            'alt'   => 'Gold Flour'
-        ],
-        [
-            'image' => $path['images']['flour_red'],
-            'alt'   => 'Red Flour'
-        ],
-        [
-            'image' => $path['images']['flour_green'],
-            'alt'   => 'Green Flour'
-        ],
-    ]; ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 text-center">
