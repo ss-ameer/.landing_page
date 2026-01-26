@@ -4,6 +4,12 @@ $default = [
     'images' => '../assets/images'
 ];
 
+$partners = [];
+
+for ($i = 1; $i <= 16; $i++) {
+    $partners[] = $default['images'] . "/partners/partner($i).svg";
+}
+
 return [
     'includes' => [
         'head'     => __DIR__ . '/../includes/head.php',
@@ -34,9 +40,12 @@ return [
         'hero_middle' => $default['images'] . '/graph/graph_middle.png',
         'hero_front' => $default['images'] . '/graph/graph_front.png',
 
-        //brand
+        // brand
         'brand_icon' => $default['images'] . '/brand/brand_icon.png',
         'brand_logo' => $default['images'] . '/brand/brand_logo.jpeg',
+
+        // partners
+        'partners' => $partners,
     ],
 
 ];

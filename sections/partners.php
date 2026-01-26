@@ -5,6 +5,14 @@ $section_data = [
 ]
 ?>
 
-<section class="section patners">
+<section class="section partners">
     <?php include $path['partials']['section_headline']; ?>
+
+    <div class="partners__track">
+        <?php foreach ($path['images']['partners'] as $logo): ?>
+            <div class="partners__item">
+                <img src="<?= esc($logo) ?>" alt="Partner logo">
+            </div>
+        <?php endforeach; ?>
+    </div>
 </section>

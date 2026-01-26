@@ -1,4 +1,4 @@
-<div class="section--headline container">
+<div class="section--headline container my-5">
     <div class="row">
         <div class="col">
             <hr>
