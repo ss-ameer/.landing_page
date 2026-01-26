@@ -16,6 +16,7 @@ return [
         'product' => __DIR__ . '/../sections/product.php',
         'uses'    => __DIR__ . '/../sections/uses.php',
         'cta'     => __DIR__ . '/../sections/cta.php',
+        'partners' => __DIR__ . '/../sections/partners.php',
     ],
 
     'images' => [

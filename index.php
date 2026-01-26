@@ -13,6 +13,7 @@ $data = require './config/site.php';
     <?php include $path['sections']['hero']; ?>
     <?php include $path['sections']['uses']; ?>
     <?php include $path['sections']['product']; ?>
+    <?php include $path['sections']['partners']; ?>
     <?php include $path['sections']['cta']; ?>
 </main>
 
