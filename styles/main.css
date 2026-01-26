@@ -206,16 +206,23 @@ header a {
 .partners {
   overflow: hidden;
   padding: 2rem 0;
+  background: #fff;
 }
 .partners__track {
   display: flex;
   gap: 4rem;
   width: -moz-max-content;
   width: max-content;
-  animation: partners-scroll 40s linear infinite;
+  animation: partners-scroll 60s linear infinite;
+}
+.partners__track--reverse {
+  margin-top: 2rem;
+  animation-direction: reverse;
+  animation-delay: -18s;
 }
 .partners__track img {
   height: 48px;
+  width: auto;
   opacity: 0.75;
   filter: grayscale(100%);
   transition: opacity 0.3s ease, filter 0.3s ease;

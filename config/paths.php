@@ -6,7 +6,7 @@ $default = [
 
 $partners = [];
 
-for ($i = 1; $i <= 16; $i++) {
+for ($i = 1; $i <= 24; $i++) {
     $partners[] = $default['images'] . "/partners/partner($i).svg";
 }
 
