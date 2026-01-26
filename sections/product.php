@@ -24,9 +24,9 @@ $section_data = [
 ];
 ?>
 
-<?php include $path['partials']['section_headline']; ?>
-<section class="section product">
-    <div class="container">
+<section class="section product p-0">
+    <?php include $path['partials']['section_headline']; ?>
+    <div class="product--container container">
         <div class="row">
             <div class="col-lg-6 text-center">
                 <div id="carouselProductMain" class="carousel slide" data-bs-ride="carousel">

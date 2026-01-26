@@ -137,7 +137,7 @@
   font-size: 1.1rem;
   line-height: 1.6;
 }
-.product .container {
+.product--container {
   background-color: #7B0102;
 }
 .product .thumbnail-img {

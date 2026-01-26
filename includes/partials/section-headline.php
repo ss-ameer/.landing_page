@@ -1,4 +1,4 @@
-<div class="section--headline container my-5">
+<div class="section--headline container py-3 my-3">
     <div class="row">
         <div class="col">
             <hr>
