@@ -19,8 +19,8 @@ $products_carousel_items = [
 ];
 
 $section_data = [
-    'headline_sub' => 'Extended Product Range',
-    'headline_main' => 'Additional flour types available upon requirement',
+    'headline_sub' => $data['product']['headline-data']['headline-sub'],
+    'headline_main' => $data['product']['headline-data']['headline-main'],
 ];
 ?>
 

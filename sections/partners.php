@@ -1,4 +1,9 @@
 <?php
+$section_data = [
+    'headline_main' => $data['partners']['headline-main'],
+    'headline_sub' => $data['partners']['headline-sub']
+];
+
 $partners = $path['images']['partners'];
 $repeatCount = 3;
 

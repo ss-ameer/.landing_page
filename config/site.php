@@ -54,6 +54,10 @@ return [
     ],
 
     'product' => [
+        'headline-data' => [
+            'headline-main' => 'We Got you Covered',
+            'headline-sub' => 'Diffent Needs?'
+        ],
         'flour-gold' => [
             'name' => '3A Gold T-55',
             'description' => '3A Gold T-55 Flour is a fine, French-style wheat flour with moderate protein content, ideal for baguettes, pastries, and light, airy breads. It provides smooth dough handling and consistently excellent baking results.',
@@ -102,5 +106,10 @@ return [
         'headline' => 'Bake with Confidence',
         'text' => 'Upgrade your ingredients and achieve consistent, professional results every time.',
         'button' => 'Order on Baker’s Mart',
+    ],
+
+    'partners' => [
+        'headline-sub' => 'Trusted by Our Partners',
+        'headline-main' => 'Backed, Proven, and Tested'
     ],
 ];
