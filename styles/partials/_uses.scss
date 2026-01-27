@@ -3,17 +3,26 @@
 @use 'variables' as *;
 
 .uses {
+    .title {
+        // background-color: red;
+        // font-family: 'Poppins';
+        font-weight: 800;
+    }
 
     .card {
         background-color: #fff;
-        border-radius: 0.5rem; // subtle rounding
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         transition: transform 0.25s ease, background-color 0.25s ease;
-        will-change: transform;
 
         &:hover {
-            transform: translateY(8px);
+            transform: translateY(-8px);
             background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            background-color: $brand_primary;
+            height: 190px; // optional: consistent height
         }
     }
 }

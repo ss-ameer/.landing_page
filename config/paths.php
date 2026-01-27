@@ -1,7 +1,9 @@
 <?php
 
 $default = [
-    'images' => '../assets/images'
+    'images' => '../assets/images',
+    'images-graph' => '../assets/images/graph/graph',
+    'images-raw' => '../assets/images/raw/raw-',
 ];
 
 $partners = [];
@@ -36,13 +38,18 @@ return [
         'flour_green' => $default['images'] . '/products/flour_green.png',
 
         // hero graphics
-        'hero_back' => $default['images'] . '/graph/graph_back.png',
-        'hero_middle' => $default['images'] . '/graph/graph_middle.png',
-        'hero_front' => $default['images'] . '/graph/graph_front.png',
+        'hero_back' => $default['images-graph'] . '_back.png',
+        'hero_middle' => $default['images-graph'] . '_middle.png',
+        'hero_front' => $default['images-graph'] . '_front.png',
 
         // brand
         'brand_icon' => $default['images'] . '/brand/brand_icon.png',
         'brand_logo' => $default['images'] . '/brand/brand_logo.jpeg',
+
+        // raw
+        'raw-baguette' => $default['images-raw'] . 'baguette.png',
+        'raw-bread' => $default['images-raw'] . 'bread.png',
+        'raw-pin' => $default['images-raw'] . 'pin.png',
 
         // partners
         'partners' => $partners,
