@@ -7,12 +7,12 @@
         display: flex;
         gap: 4rem;
         width: max-content;
-        animation: partners-scroll 60s linear infinite;
+        animation: partners-scroll 120s linear infinite;
 
         &--reverse {
             margin-top: 2rem;
             animation-direction: reverse;
-            animation-delay: -18s;
+            animation-delay: -30s;
         }
 
         img {

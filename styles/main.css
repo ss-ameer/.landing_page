@@ -222,12 +222,12 @@ header a {
   gap: 4rem;
   width: -moz-max-content;
   width: max-content;
-  animation: partners-scroll 60s linear infinite;
+  animation: partners-scroll 120s linear infinite;
 }
 .partners__track--reverse {
   margin-top: 2rem;
   animation-direction: reverse;
-  animation-delay: -18s;
+  animation-delay: -30s;
 }
 .partners__track img {
   height: 48px;
