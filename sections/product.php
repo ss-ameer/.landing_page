@@ -26,7 +26,7 @@ $section_data = [
 
 <section class="section product p-0">
     <?php include $path['partials']['section_headline']; ?>
-    <div class="product--container container rounded">
+    <div class="product--container container rounded-3">
         <div class="row">
             <div class="col-lg-6 text-center">
                 <div id="carouselProductMain" class="carousel slide" data-bs-ride="carousel">

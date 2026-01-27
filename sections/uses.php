@@ -14,7 +14,7 @@
         <div class="row gy-4">
             <?php foreach ($data['uses'] as $use): ?>
                 <div class="col-md-4">
-                    <div class="card shadow-sm text-center">
+                    <div class="card shadow-sm text-center rouded-3">
 
                         <img src="<?= esc_arr($use, 'image') ?>" alt="" class="card-img-top uses-bg-image">
 
