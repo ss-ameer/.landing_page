@@ -15,6 +15,7 @@ $data = require './config/site.php';
     <?php include $path['sections']['product']; ?>
     <?php include $path['sections']['partners']; ?>
     <?php include $path['sections']['cta']; ?>
+    <?php include $path['sections']['service']; ?>
 </main>
 
 <?php include $path['includes']['footer'] ?>

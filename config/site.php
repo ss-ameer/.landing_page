@@ -113,6 +113,29 @@ return [
         'headline-main' => 'Backed, Proven, and Tested'
     ],
 
+    'service' => [
+        [
+            'title' => 'Flexible Delivery',
+            'content' => 'Shipping is available to various locations',
+            'icon' => 'bi bi-globe',
+        ],
+        [
+            'title' => 'Secure Payment',
+            'content' => 'Pay with popular and secure payment methods', // fixed grammatical error
+            'icon' => 'bi bi-lock-fill',
+        ],
+        [
+            'title' => 'Easy Return Policy',
+            'content' => 'Hassle-free returns for your convenience',
+            'icon' => 'bi bi-arrow-repeat',
+        ],
+        [
+            'title' => 'Help Center',
+            'content' => 'Our support team is always ready to assist you.',
+            'icon' => 'bi bi-headset',
+        ]
+    ],
+
     'footer' => [
         [
             'title' => 'Customer Service',
