@@ -14,6 +14,16 @@ body {
     color: $brand-dark;
 }
 
+footer {
+    background-color: $brand-primary;
+    color: $brand-secondary;
+    font-size: small;
+
+    .footer-icon {
+        height: 15.5em;
+    }
+}
+
 // Layout
 .section {
     padding: 4rem 0;

@@ -112,4 +112,66 @@ return [
         'headline-sub' => 'Trusted by Our Partners',
         'headline-main' => 'Backed, Proven, and Tested'
     ],
+
+    'footer' => [
+        [
+            'title' => 'Customer Service',
+            'data' => [
+                [
+                    'label' => 'Delivery Options',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'FAQs',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Chat with us',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Latest News',
+                    'link' => ''
+                ],
+            ]
+        ],
+        [
+            'title' => 'Legal',
+            'data' => [
+                [
+                    'label' => 'Privacy Policy',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Refund Policy',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Terms & Conditions',
+                    'link' => ''
+                ],
+            ]
+        ],
+        [
+            'title' => 'Get to know us',
+            'data' => [
+                [
+                    'label' => 'Our story',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Our Locations',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Contact Us',
+                    'link' => ''
+                ],
+                [
+                    'label' => 'Careers',
+                    'link' => ''
+                ]
+            ]
+        ],
+    ],
 ];

@@ -44,6 +44,7 @@ return [
 
         // brand
         'brand_icon' => $default['images'] . '/brand/brand_icon.png',
+        'brand_icon-light' => $default['images'] . '/brand/brand_icon-light.webp',
         'brand_logo' => $default['images'] . '/brand/brand_logo.jpeg',
 
         // raw

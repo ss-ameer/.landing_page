@@ -255,6 +255,15 @@ body {
   color: #242424;
 }
 
+footer {
+  background-color: #7B0102;
+  color: #FFF9F9;
+  font-size: small;
+}
+footer .footer-icon {
+  height: 15.5em;
+}
+
 .section {
   padding: 4rem 0;
 }
