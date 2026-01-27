@@ -1,0 +1,31 @@
+@use 'variables' as *;
+
+.service {
+    background: $brand-highlight;
+    font-size: small;
+    line-height: 1.3;
+    border: 2px solid $brand-gray;
+
+    .service-icon {
+        font-size: 3rem;
+        color: $brand-primary;
+    }
+
+    .service-title {
+        line-height: 2;
+    }
+
+    .col {
+        font-size: 1em;
+        border-right: 1.5px solid $brand-gray;
+        // border-right: 2px solid rgba(255, 255, 255, 0.3);
+        // padding: 2rem 1.5rem;
+        display: flex;
+        gap: 1rem;
+        // background-color: $brand-dark;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}

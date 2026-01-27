@@ -1,4 +1,7 @@
 <?php
+$show_outline = false; // Set to false to hide all outlines
+?>
+<?php
 require './includes/function.php';
 require './config/variables.php';
 

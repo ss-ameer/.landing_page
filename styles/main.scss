@@ -6,6 +6,7 @@
 @use 'partials/products';
 @use 'partials/header';
 @use 'partials/partners';
+@use 'partials/service';
 
 // Base
 body {
@@ -67,5 +68,5 @@ footer {
 // Utilities
 /* for debugging outline */
 .outline {
-    outline: 2px solid var(--outline-color);
+    // outline: 2px solid var(--outline-color, green);
 }

@@ -1,15 +1,17 @@
 <section class="service section p-0">
-    <div class="container-fluid bg-primary">
-        <div class="row">
+    <div class="container-fluid p-2">
+        <div class="row p-3 py-4">
             <?php foreach ($data['service'] as $service): ?>
-                <div class="col d-flex">
-                    <div>
-                        <i class="<?= $service['icon'] ?>"></i>
+                <div class="col d-flex align-content-center outline">
+                    <div class="outline px-3">
+                        <i class="service-icon <?= $service['icon'] ?>"></i>
                     </div>
-                    <div>
-                        <p class="fw-bold"><?= $service['title'] ?></p>
-                        <p class="lead"><?= $service['content'] ?></p>
+                    <!-- <div class="outline d-flex flex-row" style="--outline-color: red;"> -->
+                    <div class="my-auto">
+                        <span class="service-title fw-bold"><?= $service['title'] ?></span> <br>
+                        <span class=""><?= $service['content'] ?></span>
                     </div>
+                    <!-- </div> -->
                 </div>
             <?php endforeach ?>
         </div>

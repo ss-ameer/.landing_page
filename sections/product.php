@@ -1,8 +1,4 @@
 <?php
-$show_outline = false; // Set to false to hide all outlines
-?>
-
-<?php
 $products_carousel_items = [
     [
         'image' => $path['images']['flour_gold'],
