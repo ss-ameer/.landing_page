@@ -2,9 +2,29 @@
 
 // CTA
 .cta {
+
+    position: relative;
     background-color: $brand-primary;
-    color: #fff;
-    padding: 4rem 0;
+    color: $brand-light;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../assets/images/brand/brand_graph.png');
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: 100% 20%;
+        opacity: 0.25;
+        mix-blend-mode: multiply;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
 
     h2 {
         font-weight: 600;

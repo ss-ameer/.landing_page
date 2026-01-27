@@ -123,9 +123,25 @@
 }
 
 .cta {
+  position: relative;
   background-color: #7B0102;
-  color: #fff;
-  padding: 4rem 0;
+  color: #f4f4f4;
+  overflow: hidden;
+}
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/images/brand/brand_graph.png");
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: 100% 20%;
+  opacity: 0.25;
+  mix-blend-mode: multiply;
+}
+.cta .container {
+  position: relative;
+  z-index: 1;
 }
 .cta h2 {
   font-weight: 600;
@@ -281,10 +297,17 @@ body {
 footer {
   background-color: #7B0102;
   color: #FFF9F9;
-  font-size: small;
+  font-size: 0.8rem;
+  font-family: "Poppins";
 }
 footer .footer-icon {
   height: 15.5em;
+}
+footer .footer-title {
+  cursor: default;
+}
+footer .footer-link {
+  line-height: 1;
 }
 
 .section {

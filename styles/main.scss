@@ -18,10 +18,19 @@ body {
 footer {
     background-color: $brand-primary;
     color: $brand-secondary;
-    font-size: small;
+    font-size: 0.80rem;
+    font-family: 'Poppins';
 
     .footer-icon {
         height: 15.5em;
+    }
+
+    .footer-title {
+        cursor: default;
+    }
+
+    .footer-link {
+        line-height: 1;
     }
 }
 

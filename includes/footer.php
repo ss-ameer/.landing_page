@@ -1,4 +1,4 @@
-<footer class="">
+<footer class="py-5">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 d-flex">
@@ -9,9 +9,9 @@
             </div>
             <?php foreach ($data['footer'] as $section): ?>
                 <div class="col">
-                    <p class="fw-bold text-uppercase"><?= $section['title'] ?></p>
+                    <p class="fw-bold footer-title text-uppercase"><?= $section['title'] ?></p>
                     <?php foreach ($section['data'] as $links): ?>
-                        <p><?= $links['label'] ?></p>
+                        <p class="footer-link"><a href="" class="text-decoration-none text-reset"><?= $links['label'] ?></a></p>
                     <?php endforeach ?>
                 </div>
             <?php endforeach ?>
