@@ -1,5 +1,22 @@
-<footer class="py-4 bg-light">
-    <div class="container text-center">
+<footer class="">
+    <div class="container">
+        <div class="row bg-secondary">
+            <di class="col-5 bg-primary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, velit.
+            </di>
+            <div class="col bg-success">
+
+            </div>
+            <div class="col bg-danger">
+
+            </div>
+            <div class="col bg-primary">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center py-4 bg-light">
         <small>Demo landing page created for evaluation purposes.</small>
     </div>
 </footer>
