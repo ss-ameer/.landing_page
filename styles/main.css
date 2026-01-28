@@ -292,6 +292,7 @@ body {
   background: #FFF9F9;
   font-family: "Inter", sans-serif;
   color: #242424;
+  overflow-x: hidden;
 }
 
 footer {

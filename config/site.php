@@ -91,14 +91,14 @@ return [
             'image' => $path['images']['raw-baguette'],
         ],
         [
-            'title' => 'Pastries & Viennoiserie',
-            'text' => 'Reliable elasticity and softness for croissants, brioche, and laminated doughs.',
-            'image' => $path['images']['raw-bread'],
-        ],
-        [
             'title' => 'Professional Kitchens',
             'text' => 'Consistent performance that supports high-volume production and quality control.',
             'image' => $path['images']['raw-pin'],
+        ],
+        [
+            'title' => 'Pastries & Viennoiserie',
+            'text' => 'Reliable elasticity and softness for croissants, brioche, and laminated doughs.',
+            'image' => $path['images']['raw-croissant'],
         ],
     ],
 

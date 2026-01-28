@@ -52,6 +52,8 @@ return [
         'raw-baguette' => $default['images-raw'] . 'baguette.png',
         'raw-bread' => $default['images-raw'] . 'bread.png',
         'raw-pin' => $default['images-raw'] . 'pin.png',
+        'raw-pastry' => $default['images-raw'] . 'pastry.png',
+        'raw-croissant' => $default['images-raw'] . 'croissant.png',
 
         // partners
         'partners' => $partners,
