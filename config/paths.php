@@ -30,6 +30,7 @@ return [
         'cta'     => __DIR__ . '/../sections/cta.php',
         'partners' => __DIR__ . '/../sections/partners.php',
         'service' => __DIR__ . '/../sections/service.php',
+        'newsteller' => __DIR__ . '/../sections/newsteller.php',
     ],
 
     'images' => [

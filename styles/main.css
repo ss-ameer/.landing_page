@@ -231,7 +231,6 @@ header a {
 .partners {
   overflow: hidden;
   padding: 2rem 0;
-  background: #fff;
 }
 .partners__track {
   display: flex;
@@ -286,6 +285,19 @@ header a {
 }
 .service .col:last-child {
   border-right: none;
+}
+
+.newsteller--container {
+  height: 600px;
+}
+.newsteller .half-box {
+  height: 50%;
+}
+.newsteller .overlay-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 body {

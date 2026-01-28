@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+.newsteller {
+    &--container {
+        height: 600px;
+    }
+
+    .half-box {
+        height: 50%;
+    }
+
+    .overlay-box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}

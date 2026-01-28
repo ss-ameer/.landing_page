@@ -1,7 +1,9 @@
+@use 'variables' as *;
+
 .partners {
     overflow: hidden;
     padding: 2rem 0;
-    background: #fff;
+    // background: $brand-secondary;
 
     &__track {
         display: flex;
