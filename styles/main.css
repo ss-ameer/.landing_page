@@ -285,13 +285,23 @@ header a {
 }
 
 .newsteller {
-  font-family: "Bebas Neue", cursive;
+  font-family: "Bebas Neue";
 }
 .newsteller--container {
-  height: 25rem;
+  height: 24rem;
 }
 .newsteller--image {
   height: 100%;
+  transition: all 0.4s ease;
+}
+.newsteller--image:hover {
+  margin: 0.5rem;
+}
+.newsteller--image__top:hover {
+  transform: translateY(-1.5rem) scale(1.05);
+}
+.newsteller--image__bottom:hover {
+  transform: translateY(1rem) scale(1.05);
 }
 .newsteller .half-box {
   height: 50%;
