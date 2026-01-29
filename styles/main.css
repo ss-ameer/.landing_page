@@ -194,7 +194,7 @@
 }
 
 header {
-  background: #FFF9F9;
+  background: #FFF0F0;
 }
 header .top-bar {
   background-color: #7B0102;
@@ -288,7 +288,10 @@ header a {
 }
 
 .newsteller--container {
-  height: 600px;
+  height: 25rem;
+}
+.newsteller--image {
+  height: 100%;
 }
 .newsteller .half-box {
   height: 50%;
@@ -301,7 +304,7 @@ header a {
 }
 
 body {
-  background: #FFF9F9;
+  background: #FFF0F0;
   font-family: "Inter", sans-serif;
   color: #242424;
   overflow-x: hidden;
@@ -309,7 +312,7 @@ body {
 
 footer {
   background-color: #7B0102;
-  color: #FFF9F9;
+  color: #FFF0F0;
   font-size: 0.8rem;
   font-family: "Poppins";
 }

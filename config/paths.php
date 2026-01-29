@@ -4,12 +4,18 @@ $default = [
     'images' => '../assets/images',
     'images-graph' => '../assets/images/graph/graph',
     'images-raw' => '../assets/images/raw/raw-',
+    // 'images-promo' => '../assets/images/raw/promo',
 ];
 
 $partners = [];
+$promo = [];
 
 for ($i = 1; $i <= 24; $i++) {
     $partners[] = $default['images'] . "/partners/partner($i).svg";
+}
+
+for ($i = 1; $i <= 3; $i++) {
+    $promo[] = $default['images'] . "/promo/promo($i).jpg";
 }
 
 return [
@@ -58,6 +64,10 @@ return [
 
         // partners
         'partners' => $partners,
+
+        // promo
+        'promo' => $promo,
+
     ],
 
 ];
