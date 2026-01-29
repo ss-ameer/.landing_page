@@ -9,22 +9,27 @@ return [
         'facebook' => [
             'link' => 'https://www.facebook.com/bakersmartme/',
             'icon' => 'bi bi-facebook',
+            'color' => '#1877F2',
         ],
         'x' => [
             'link' => 'https://bakersmart.ae/#',
             'icon' => 'bi bi-twitter-x',
+            'color' => '#000000',
         ],
         'instagram' => [
             'link' => 'https://www.instagram.com/bakersmartme/?hl=en',
             'icon' => 'bi bi-instagram',
+            'color' => 'linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)',
         ],
         'youtube' => [
             'link' => 'https://www.youtube.com/@BakersMartuae',
             'icon' => 'bi bi-youtube',
+            'color' => '#FF0000',
         ],
         'pinterest' => [
             'link' => 'https://bakersmart.ae/#',
             'icon' => 'bi bi-pinterest',
+            'color' => '#E60023',
         ],
     ],
 
@@ -41,7 +46,7 @@ return [
         ],
         'mobile' => [
             'value' => '+971 54 211 8789',
-            'icon' => 'bi bi-telephone'
+            'icon' => 'bi bi-telephone',
         ]
     ],
 

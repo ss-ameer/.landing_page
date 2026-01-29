@@ -24,20 +24,6 @@ header {
         &--right {
             font-size: 0.75rem;
 
-            .socials {
-                font-size: 0.95rem;
-
-                .social-icon {
-                    &:hover {
-                        transform: scale(2);
-                        filter: grayscale(75%) brightness(0.50);
-                        transition: all 0.5s ease;
-                    }
-                }
-
-            }
-
-
             .mobile {
                 &--value {
                     @include hover-underline;
@@ -47,6 +33,14 @@ header {
             .location {
                 &--value {
                     @include hover-underline;
+                }
+            }
+
+            .social-icon {
+                &:hover {
+                    transform: scale(2);
+                    filter: grayscale(75%) brightness(0.50);
+                    transition: all 0.5s ease;
                 }
             }
         }

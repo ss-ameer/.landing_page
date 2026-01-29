@@ -3,32 +3,32 @@
         <div class="newsteller--container position-relative d-flex flex-column">
 
             <div class="half-box">
-                <div class="d-flex bg-danger gap-3 h-100 justify-content-center">
+                <div class="d-flex gap-3 h-100 justify-content-center">
                     <?php foreach ($path['images']['promo'] as $promoImage): ?>
                         <img src="<?php echo $promoImage; ?>" alt="Promo Image" class="newsteller--image rounded-4">
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div class="flex-fill half-box bg-secondary">
+            <div class="flex-fill half-box">
                 <!-- content -->
             </div>
 
             <div class="overlay-box container p-5">
                 <div class="container">
                     <div class="row gap-3">
-                        <div class="col d-flex flex-column align-items-center justify-content-center bg-success">
+                        <div class="col d-flex flex-column align-items-center justify-content-center">
                             <h3 class="">Follow Us On</h3>
-                            <div class="">
+                            <div class="socials d-flex gap-3">
                                 <?php foreach ($data['socials'] as $social): ?>
-                                    <a href="<?= $social['link']; ?>" class="">
-                                        <i class="<?= $social['icon']; ?>"></i>
+                                    <a href="<?= $social['link']; ?>" class="social-icon px-3 py-2 rounded" style="background:<?= $social['color']; ?>;">
+                                        <i class="m-auto <?= $social['icon']; ?>"></i>
                                     </a>
                                 <?php endforeach; ?>
                             </div>
                         </div>
                         <div class="col bg-warning d-flex flex-column align-items-center justify-content-center">
                             <h3>Sign Up to our Newsteller</h3>
-                            <form action="">
+                            <form action="" class="w-75">
                                 <div class="d-flex gap-2">
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                                     <button type="submit" class="btn btn-primary">Submit</button>

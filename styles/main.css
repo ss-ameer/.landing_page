@@ -209,19 +209,16 @@ header .top-bar--left {
 header .top-bar--right {
   font-size: 0.75rem;
 }
-header .top-bar--right .socials {
-  font-size: 0.95rem;
-}
-header .top-bar--right .socials .social-icon:hover {
-  transform: scale(2);
-  filter: grayscale(75%) brightness(0.5);
-  transition: all 0.5s ease;
-}
 header .top-bar--right .mobile--value:hover {
   text-decoration: underline;
 }
 header .top-bar--right .location--value:hover {
   text-decoration: underline;
+}
+header .top-bar--right .social-icon:hover {
+  transform: scale(2);
+  filter: grayscale(75%) brightness(0.5);
+  transition: all 0.5s ease;
 }
 header a {
   text-decoration: none;
@@ -287,6 +284,9 @@ header a {
   border-right: none;
 }
 
+.newsteller {
+  font-family: "Bebas Neue", cursive;
+}
 .newsteller--container {
   height: 25rem;
 }
@@ -301,6 +301,15 @@ header a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+.newsteller .socials .social-icon {
+  font-size: 2rem;
+}
+.newsteller .socials .social-icon i {
+  transition: all 0.3s ease;
+}
+.newsteller .socials .social-icon i:hover {
+  scale: 0.5;
 }
 
 body {
@@ -341,6 +350,14 @@ footer .footer-link {
 .btn-standard:hover {
   background-color: rgba(255, 255, 255, 0.9);
   outline: auto;
+}
+
+.socials {
+  font-size: 0.95rem;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
 }
 
 .section--headline .headline--sub {
