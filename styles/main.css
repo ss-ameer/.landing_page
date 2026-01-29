@@ -304,12 +304,10 @@ header a {
 }
 .newsteller .socials .social-icon {
   font-size: 2rem;
-}
-.newsteller .socials .social-icon i {
   transition: all 0.3s ease;
 }
-.newsteller .socials .social-icon i:hover {
-  scale: 0.5;
+.newsteller .socials .social-icon:hover {
+  scale: 0.9;
 }
 
 body {

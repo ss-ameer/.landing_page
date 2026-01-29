@@ -9,13 +9,18 @@ $default = [
 
 $partners = [];
 $promo = [];
+$promo_2 = [];
 
 for ($i = 1; $i <= 24; $i++) {
     $partners[] = $default['images'] . "/partners/partner($i).svg";
 }
 
-for ($i = 1; $i <= 3; $i++) {
+for ($i = 1; $i <= 9; $i++) {
     $promo[] = $default['images'] . "/promo/promo($i).jpg";
+}
+
+for ($i = 10; $i <= 18; $i++) {
+    $promo_2[] = $default['images'] . "/promo/promo($i).jpg";
 }
 
 return [
@@ -67,6 +72,7 @@ return [
 
         // promo
         'promo' => $promo,
+        'promo_2' => $promo_2,
 
     ],
 

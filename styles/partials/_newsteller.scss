@@ -28,12 +28,10 @@
         .social-icon {
             font-size: 2rem;
 
-            i {
-                transition: all 0.3s ease;
+            transition: all 0.3s ease;
 
-                &:hover {
-                    scale: 0.50;
-                }
+            &:hover {
+                scale: 0.90;
             }
         }
     }
