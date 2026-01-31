@@ -47,10 +47,9 @@
         color: $brand-light;
 
         .col {
-            background: rgba(123, 1, 2, 0.95);
+            background-color: rgba($brand-primary, 0.95);
             padding: 2rem 0.5rem;
-            outline: solid 2px $brand-highlight ;
-
+            // outline: solid 2px $brand-highlight ;
         }
     }
 

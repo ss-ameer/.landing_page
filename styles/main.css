@@ -227,19 +227,19 @@ header a {
 
 .partners {
   overflow: hidden;
-  padding: 2rem 0;
 }
 .partners__track {
   display: flex;
   gap: 4rem;
-  width: -moz-max-content;
-  width: max-content;
   animation: partners-scroll 120s linear infinite;
+  will-change: transform;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 .partners__track--reverse {
   margin-top: 2rem;
-  animation-direction: reverse;
-  animation-delay: -30s;
+  animation: partners-scroll 120s linear infinite reverse;
+  animation-delay: -110s;
 }
 .partners__track img {
   height: 48px;
@@ -312,9 +312,8 @@ header a {
   color: #f4f4f4;
 }
 .newsteller .overlay-box .col {
-  background: rgba(123, 1, 2, 0.95);
+  background-color: rgba(123, 1, 2, 0.95);
   padding: 2rem 0.5rem;
-  outline: solid 2px #efeded;
 }
 .newsteller .socials .social-icon {
   font-size: 2rem;

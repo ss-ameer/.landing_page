@@ -5,36 +5,36 @@ $section_data = [
 ];
 
 $partners = $path['images']['partners'];
-$repeatCount = 3;
 
-$partnersTrack1 = [];
-for ($i = 0; $i < $repeatCount; $i++) {
-    $partnersTrack1 = array_merge($partnersTrack1, $partners);
-}
-
-$partnersTrack2 = array_reverse($partnersTrack1);
+$tracks = [
+    array_merge($partners, $partners),               // normal
+    array_merge(array_reverse($partners), array_reverse($partners)) // reverse
+];
 ?>
 
-
-
-<section class="section partners">
+<section class="section partners pb-0">
     <?php include $path['partials']['section_headline']; ?>
 
-    <!-- normal scroll -->
-    <div class="partners__track">
-        <?php foreach ($partnersTrack1 as $logo): ?>
-            <div class="partners__item">
-                <img src="<?= esc($logo) ?>" alt="Partner logo">
-            </div>
-        <?php endforeach; ?>
-    </div>
+    <div class="container">
+        <div class="row">
 
-    <!-- reversed scroll -->
-    <div class="partners__track partners__track--reverse">
-        <?php foreach ($partnersTrack2 as $logo): ?>
-            <div class="partners__item">
-                <img src="<?= esc($logo) ?>" alt="Partner logo">
-            </div>
-        <?php endforeach; ?>
+            <?php foreach ($tracks as $i => $track): ?>
+                <div class="col partners__track <?= $i === 1 ? 'partners__track--reverse' : '' ?>">
+                    <?php foreach ($track as $logo): ?>
+                        <div class="partners__item">
+                            <img src="<?= esc($logo) ?>" alt="Partner logo">
+                        </div>
+                    <?php endforeach; ?>
+
+                    <?php foreach ($track as $logo): ?>
+                        <div class="partners__item">
+                            <img src="<?= esc($logo) ?>" alt="Partner logo">
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+
+            <?php endforeach; ?>
+
+        </div>
     </div>
 </section>

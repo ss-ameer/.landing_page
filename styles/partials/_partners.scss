@@ -2,19 +2,18 @@
 
 .partners {
     overflow: hidden;
-    padding: 2rem 0;
-    // background: $brand-secondary;
 
     &__track {
         display: flex;
         gap: 4rem;
-        width: max-content;
         animation: partners-scroll 120s linear infinite;
+        will-change: transform;
+        min-width: max-content;
 
         &--reverse {
             margin-top: 2rem;
-            animation-direction: reverse;
-            animation-delay: -30s;
+            animation: partners-scroll 120s linear infinite reverse;
+            animation-delay: -110s;
         }
 
         img {
