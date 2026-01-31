@@ -19,7 +19,7 @@ for ($i = 1; $i <= 9; $i++) {
     $promo[] = $default['images'] . "/promo/promo($i).jpg";
 }
 
-for ($i = 10; $i <= 18; $i++) {
+for ($i = 11; $i <= 19; $i++) {
     $promo_2[] = $default['images'] . "/promo/promo($i).jpg";
 }
 

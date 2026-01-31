@@ -37,7 +37,7 @@
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/poppins/Poppins.ttf") format("truetype");
+  src: url("../assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -284,11 +284,9 @@ header a {
   border-right: none;
 }
 
-.newsteller {
-  font-family: "Bebas Neue";
-}
 .newsteller--container {
-  height: 24rem;
+  height: 25rem;
+  font-family: "Bebas Neue";
 }
 .newsteller--image {
   height: 100%;
@@ -311,6 +309,12 @@ header a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  color: #f4f4f4;
+}
+.newsteller .overlay-box .col {
+  background: rgba(123, 1, 2, 0.95);
+  padding: 2rem 0.5rem;
+  outline: solid 2px #efeded;
 }
 .newsteller .socials .social-icon {
   font-size: 2rem;
@@ -318,6 +322,14 @@ header a {
 }
 .newsteller .socials .social-icon:hover {
   scale: 0.9;
+}
+.newsteller .btn-standard {
+  padding: 0.35em 1.5em;
+}
+.newsteller .btn-standard:hover {
+  background-color: #7B0102;
+  color: #f4f4f4;
+  outline: solid 2px #f4f4f4;
 }
 
 body {
@@ -375,7 +387,7 @@ footer .footer-link {
   color: #7B0102;
 }
 .section--headline .headline--main {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins";
   font-size: 2em;
   font-weight: 800;
   color: #242424;

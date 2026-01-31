@@ -2,10 +2,10 @@
 
 .newsteller {
     // overflow: hidden;
-    font-family: 'Bebas Neue';
 
     &--container {
-        height: 24rem;
+        height: 25rem;
+        font-family: 'Bebas Neue';
     }
 
     &--image {
@@ -44,6 +44,14 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        color: $brand-light;
+
+        .col {
+            background: rgba(123, 1, 2, 0.95);
+            padding: 2rem 0.5rem;
+            outline: solid 2px $brand-highlight ;
+
+        }
     }
 
     .socials {
@@ -55,6 +63,17 @@
             &:hover {
                 scale: 0.90;
             }
+        }
+    }
+
+    .btn-standard {
+        padding: 0.35em 1.5em;
+
+        &:hover {
+            background-color: $brand-primary;
+            color: $brand-light;
+            // transform: translateY(-6px);
+            outline: solid 2px $brand-light ;
         }
     }
 
