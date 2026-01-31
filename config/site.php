@@ -141,6 +141,11 @@ return [
         ]
     ],
 
+    'newsteller' => [
+        'headline-main' => 'Subscribe for the latest news, offers, and baking tips.',
+        'headline-sub' => 'Stay Updated',
+    ],
+
     'footer' => [
         [
             'title' => 'Customer Service',
