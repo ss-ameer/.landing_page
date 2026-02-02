@@ -288,8 +288,17 @@ header a {
   height: 25rem;
   font-family: "Bebas Neue";
 }
+@media (max-width: 576px) {
+  .newsteller--container {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
 .newsteller--image {
   height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: all 0.4s ease;
 }
 .newsteller--image:hover {
@@ -301,8 +310,26 @@ header a {
 .newsteller--image__bottom:hover {
   transform: translateY(1rem) scale(1.05);
 }
+@media (max-width: 576px) {
+  .newsteller--image {
+    height: auto;
+    max-height: 6rem;
+  }
+}
 .newsteller .half-box {
   height: 50%;
+}
+@media (max-width: 576px) {
+  .newsteller .half-box {
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .newsteller .half-box > div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
 }
 .newsteller .overlay-box {
   position: absolute;
@@ -311,12 +338,25 @@ header a {
   transform: translate(-50%, -50%);
   color: #f4f4f4;
 }
+@media (max-width: 576px) {
+  .newsteller .overlay-box {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+}
 .newsteller .overlay-box .col {
   background-color: rgba(123, 1, 2, 0.95);
   padding: 2rem 0.5rem;
 }
+@media (max-width: 576px) {
+  .newsteller .overlay-box .col {
+    padding: 1rem;
+  }
+}
 .newsteller .socials .social-icon {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  padding: clamp(0.4rem, 1vw, 0.75rem) clamp(0.6rem, 2vw, 1rem);
   transition: all 0.3s ease;
 }
 .newsteller .socials .social-icon:hover {
@@ -379,17 +419,35 @@ footer .footer-link {
   color: white;
 }
 
+.section--headline {
+  text-align: center;
+}
+.section--headline hr {
+  border-color: rgba(36, 36, 36, 0.2);
+  margin: 0.5rem 0;
+}
+@media (max-width: 576px) {
+  .section--headline hr {
+    margin: 0.25rem 0;
+  }
+}
 .section--headline .headline--sub {
   font-family: "Breathing";
-  font-size: 1.5em;
   font-weight: bold;
   color: #7B0102;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
 }
 .section--headline .headline--main {
   font-family: "Poppins";
-  font-size: 2em;
   font-weight: 800;
   color: #242424;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-top: 0.5rem;
+}
+@media (max-width: 576px) {
+  .section--headline .headline--main {
+    margin-top: 0.25rem;
+  }
 }
 
 /* for debugging outline *//*# sourceMappingURL=main.css.map */

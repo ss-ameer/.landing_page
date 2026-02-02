@@ -1,42 +1,57 @@
 @use 'variables' as *;
 
 .newsteller {
-    // overflow: hidden;
 
     &--container {
         height: 25rem;
         font-family: 'Bebas Neue';
+
+        @media (max-width: 576px) {
+            height: auto;
+            padding-bottom: 2rem;
+        }
     }
 
     &--image {
         height: 100%;
-
-        // height: 18rem;
-        // padding: 1rem;
+        max-width: 100%;
+        object-fit: cover;
         transition: all 0.4s ease;
 
         &:hover {
-
-            // transform: translateY(-2rem) scale(1.05);
             margin: 0.50rem;
         }
 
-        &__top {
-            &:hover {
-                transform: translateY(-1.5rem) scale(1.05);
-            }
+        &__top:hover {
+            transform: translateY(-1.5rem) scale(1.05);
         }
 
-        &__bottom {
-            &:hover {
-                transform: translateY(1rem) scale(1.05);
-            }
+        &__bottom:hover {
+            transform: translateY(1rem) scale(1.05);
         }
 
+        // Mobile: prevent overflow
+        @media (max-width: 576px) {
+            height: auto;
+            max-height: 6rem;
+        }
     }
 
     .half-box {
         height: 50%;
+
+        @media (max-width: 576px) {
+            height: auto;
+        }
+    }
+
+    // Mobile: stack images vertically and allow scrolling
+    @media (max-width: 576px) {
+        .half-box>div {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.75rem;
+        }
     }
 
     .overlay-box {
@@ -46,17 +61,26 @@
         transform: translate(-50%, -50%);
         color: $brand-light;
 
+        @media (max-width: 576px) {
+            position: static;
+            transform: none;
+            margin-top: 1rem;
+        }
+
         .col {
             background-color: rgba($brand-primary, 0.95);
             padding: 2rem 0.5rem;
-            // outline: solid 2px $brand-highlight ;
+
+            @media (max-width: 576px) {
+                padding: 1rem;
+            }
         }
     }
 
     .socials {
         .social-icon {
-            font-size: 2rem;
-
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            padding: clamp(0.4rem, 1vw, 0.75rem) clamp(0.6rem, 2vw, 1rem);
             transition: all 0.3s ease;
 
             &:hover {
@@ -65,15 +89,14 @@
         }
     }
 
+
     .btn-standard {
         padding: 0.35em 1.5em;
 
         &:hover {
             background-color: $brand-primary;
             color: $brand-light;
-            // transform: translateY(-6px);
-            outline: solid 2px $brand-light ;
+            outline: solid 2px $brand-light;
         }
     }
-
 }

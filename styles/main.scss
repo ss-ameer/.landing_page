@@ -15,6 +15,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: $brand-dark;
     overflow-x: hidden;
+    // width: 100vw;
 }
 
 footer {
@@ -68,23 +69,37 @@ footer {
 
 // Partials
 .section--headline {
-    // background-color: $brand-secondary;
+    text-align: center;
+
+    hr {
+        border-color: rgba($brand-dark, 0.2);
+        margin: 0.5rem 0;
+
+        @media (max-width: 576px) {
+            margin: 0.25rem 0;
+        }
+    }
 
     .headline--sub {
         font-family: 'Breathing';
-        font-size: 1.5em;
         font-weight: bold;
         color: $brand-primary;
+        font-size: clamp(1.1rem, 3vw, 1.5rem);
     }
 
     .headline--main {
         font-family: 'Poppins';
-        font-size: 2em;
         font-weight: 800;
-        color: $brand-dark,
+        color: $brand-dark;
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        margin-top: 0.5rem;
 
+        @media (max-width: 576px) {
+            margin-top: 0.25rem;
+        }
     }
 }
+
 
 // Utilities
 /* for debugging outline */
