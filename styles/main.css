@@ -154,6 +154,9 @@
   background-color: transparent;
 }
 
+.product--details {
+  background: none;
+}
 .product--name {
   font-weight: 700;
   font-size: 2.5rem;
@@ -178,6 +181,11 @@
 }
 .product .thumbnail-img:hover {
   filter: grayscale(25%) brightness(0.85);
+}
+@media (max-width: 576px) {
+  .product .thumbnail-img {
+    height: 5rem;
+  }
 }
 .product .carousel-control-prev,
 .product .carousel-control-next {
@@ -235,6 +243,9 @@ header a {
   will-change: transform;
   min-width: -moz-max-content;
   min-width: max-content;
+  flex: 0 0 auto;
+  max-width: 100vw;
+  overflow: hidden;
 }
 .partners__track--reverse {
   margin-top: 2rem;
@@ -423,7 +434,7 @@ footer .footer-link {
   text-align: center;
 }
 .section--headline hr {
-  border-color: rgba(36, 36, 36, 0.2);
+  border-color: #242424;
   margin: 0.5rem 0;
 }
 @media (max-width: 576px) {

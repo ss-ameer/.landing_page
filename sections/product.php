@@ -44,7 +44,7 @@ $section_data = [
                 </div>
             </div>
             <!-- product details column -->
-            <div class="col-lg-6 d-flex flex-column justify-content-between text-white shadow-lg<?= $show_outline ? 'outline' : '' ?>" style="--outline-color: yellow;">
+            <div class="product--details col-lg-6 d-flex rounded-3 flex-column justify-content-between text-white shadow-lg<?= $show_outline ? 'outline' : '' ?>" style="--outline-color: yellow;">
                 <div class="px-5 mt-auto mb-3 <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: yellow;">
                     <h2 id="productName" class="product--name">
                         <?= esc_arr($data, 'product.flour-gold.name') ?>
@@ -61,14 +61,16 @@ $section_data = [
                     <a href="<?= esc($data['site']['cta_url']) ?>" class="btn mb-3 shadow-sm btn-standard">Get Now</a>
                 </div>
                 <div class="mb-auto <?= $show_outline ? 'outline' : '' ?>" style="--outline-color: white">
-                    <div id="productThumbnails" class="product-thumbnails d-flex justify-content-center gap-3 w-100">
-                        <?php foreach ($products_carousel_items as $index => $item): ?>
-                            <img
-                                src="<?= esc($item['image']) ?>"
-                                alt="<?= esc($item['alt']) ?>"
-                                class="thumbnail-img <?= $index === 0 ? 'active' : '' ?>"
-                                data-index="<?= $index ?>">
-                        <?php endforeach; ?>
+                    <div class="product--thumbnails__wrapper">
+                        <div id="productThumbnails" class="product-thumbnails d-flex justify-content-center gap-3 w-100">
+                            <?php foreach ($products_carousel_items as $index => $item): ?>
+                                <img
+                                    src="<?= esc($item['image']) ?>"
+                                    alt="<?= esc($item['alt']) ?>"
+                                    class="thumbnail-img <?= $index === 0 ? 'active' : '' ?>"
+                                    data-index="<?= $index ?>">
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
             </div>
